@@ -263,3 +263,8 @@ body {
   width: 75%; 
   margin: auto;
 }
+
+.column{
+  table-layout: fixed;
+  width: 50%;
+}
