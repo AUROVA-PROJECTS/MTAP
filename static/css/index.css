@@ -215,9 +215,23 @@ body {
   transform-origin: bottom left;
 }
 
-@media (max-width: 1300px) {
+.column{
+  display: table;
+  table-layout: fixed;
+  width: 50%;
+}
+
+@media (max-width: 1080px) {
   .header_index {
       font-size: 26px; /* Limit max font size */
+  }
+  .columns {
+    flex-direction: column;
+  }
+  .column{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
   }
 }
 
@@ -264,7 +278,3 @@ body {
   margin: auto;
 }
 
-.column{
-  table-layout: fixed;
-  width: 50%;
-}
